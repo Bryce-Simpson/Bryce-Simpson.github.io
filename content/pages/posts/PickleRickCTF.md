@@ -8,7 +8,7 @@ content_img_path: /images/Banner.png
 content_img_alt: Icelandic horses
 seo:
   title: Pickle Rick Walktrhough
-  description: Iceland is a Nordic country between the North Atlantic and the Arctic Ocean.
+  description: Easy Walktrhough of TryHackMe's Pickle Rick CTF
   extra:
     - name: 'og:type'
       value: article
