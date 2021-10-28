@@ -54,7 +54,7 @@ Everything looks good, so let's try to see which ports we have available.  I'll 
 
 \-sN -- TCP Null scan
 
-\-Pn -- Treats all hosts as online / skip host discovery
+\-Pn -- Treats all hosts as online / skip host discovery`
 
 ![](/images/nmap.png)
 
