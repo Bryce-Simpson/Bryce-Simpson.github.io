@@ -17,7 +17,7 @@ seo:
       value: Pickle Rick CTF
       keyName: property
     - name: 'og:description'
-      value: Easy Walktrhough of TryHackMe's Pickle Rick CTF
+      value: Easy Walkthrough of TryHackMe's Pickle Rick CTF
       keyName: property
     - name: 'og:image'
       value: /images/o9pyhyU.jpg
