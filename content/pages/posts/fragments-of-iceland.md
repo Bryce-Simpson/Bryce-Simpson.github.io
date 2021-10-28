@@ -43,13 +43,11 @@ layout: post
 ---
 TryHackMe - Pickle Rick CTF: [https://tryhackme.com/room/picklerick](https://tryhackme.com/room/picklerickTryHackMe)
 
-This box is listed as Easy .  All three ingredients can be discovered without using any tools, but for this walkthrough I will be using:
+This box is listed as Easy .  All three ingredients can be discovered easily from your browser and without using any tools, but for this walkthrough I will be using:
 
 NMAP DIRBUSTER NETCAT
 
 I will try to provide alternative guidance where applicable.
-
-
 
 # ENUMERATION
 
@@ -61,5 +59,27 @@ Everything looks good, so let's try to see which ports we have available.  I'll 
 
 sudo nmap -sN -Pn 10.10.19.153
 
-\-sN -- 
+\-sN -- TCP Null scan
+
+\-Pn -- Treats all hosts as online / skip host discovery
+
+![](/images/nmap.png)
+
+We can see we have port 22 and port 80 open.  Let's curl the IP and see what we get back.
+
+![](/images/a_curl_port\_80.png)
+
+Nothing really stands out at first.  We can see we have a /assets/ directory we may be able to use later.  If we scroll down, however, we see a comment left by Rick, which gives us the Username.  We'll note this username, and be on the lookout for a login page.
+
+Alternatively, we can navigate to \[TARGET_IP]:80, and inspect source there to get the same:
+
+![](/images/a_inspect_source.png)
+
+Before we jump to directory hunting, let's check for a robots.txt to get any more intel:
+
+![](/images/a_curl_robots.png)
+
+Curl returns a seemingly nonsense phrase that will be important later, and I have purposely blurred.  For now, we do not know its significance though.
+
+
 
