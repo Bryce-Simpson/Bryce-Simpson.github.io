@@ -96,3 +96,8 @@ We know the Username from our notes of the HTML comment on the home page, but we
 
 ![](/images/command.png)
 
+Awesome, that worked, and now we're in.  Let's check the page source for any hidden comments or bread crumbs:
+
+![](/images/a_portal_source.png)
+
+Nothing seems to stand out aside from the comment which appears to be Base64 encoded.  Let's make note of that and go back to /portal.php.  Let's try out a few commands we know, and see if that gets us anywhere.
