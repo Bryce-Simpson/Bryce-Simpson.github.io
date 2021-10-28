@@ -14,7 +14,7 @@ seo:
       value: article
       keyName: property
     - name: 'og:title'
-      value: Fragments of Iceland
+      value: Pickle Rick CTF
       keyName: property
     - name: 'og:description'
       value: >-
