@@ -136,6 +136,8 @@ Now we can explore the machine and look for our next ingredient:
 
 ![](/images/a_shell_second.png)
 
+# PRIVILEGE ESCALATION
+
 Awesome.  That's the second ingredient, and we only have one left.  Unfortunately, the last one needs root access, so let's practice our privilege escalation.  I'll use another python script to sudo bash:
 
 \`python3 -c 'import pty; pty.spawn("/bin/bash")'\`
@@ -145,4 +147,3 @@ Now we can cd to /root, and get into the third ingredient:
 ![](/images/a_shell_last.png)
 
 That's it! We got all three ingredients.  Enter them for your points, and I'll see you in the next room.
-
