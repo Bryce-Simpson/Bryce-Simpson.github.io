@@ -44,7 +44,7 @@ TryHackMe - Pickle Rick CTF: [https://tryhackme.com/room/picklerick](https://try
 
 This box is listed as Easy .  All three ingredients can be discovered easily from your browser and without using any tools, but for this walkthrough I will be using:
 
-`NMAP DIRBUSTER NETCAT
+`NMAP DIRBUSTER NETCAT`
 
 I will try to provide alternative guidance where applicable.
 
