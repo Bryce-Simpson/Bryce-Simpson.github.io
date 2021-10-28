@@ -8,7 +8,7 @@ content_img_path: /images/Banner.png
 content_img_alt: Icelandic horses
 seo:
   title: Pickle Rick Walkthrough - Easy
-  description: Easy Walktrhough of TryHackMe's Pickle Rick CTF
+  description: Easy Walkthrough of TryHackMe's Pickle Rick CTF
   extra:
     - name: 'og:type'
       value: article
