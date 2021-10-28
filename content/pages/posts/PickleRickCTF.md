@@ -7,34 +7,30 @@ thumb_img_alt: Icelandic horses
 content_img_path: /images/Banner.png
 content_img_alt: Icelandic horses
 seo:
-  title: Fragments of Iceland
-  description: Iceland is a Nordic country between the North Atlantic and the Arctic Ocean.
+  title: Pickle Rick Walkthrough - Easy
+  description: Easy To Follow Walkthrough of TryHackMe's Pickle Rick CTF
   extra:
     - name: 'og:type'
       value: article
       keyName: property
     - name: 'og:title'
-      value: Fragments of Iceland
+      value: Pickle Rick CTF Walkthrough - Easy
       keyName: property
     - name: 'og:description'
-      value: >-
-        Iceland is a Nordic country between the North Atlantic and the Arctic
-        Ocean.
+      value: Easy To Follow Walkthrough of TryHackMe's Pickle Rick CTF
       keyName: property
     - name: 'og:image'
-      value: images/7.jpg
+      value: /images/o9pyhyU.jpg
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Fragments of Iceland
+      value: Pickle Rick CTF Walkthrough - Easy
     - name: 'twitter:description'
-      value: >-
-        Iceland is a Nordic country between the North Atlantic and the Arctic
-        Ocean.
+      value: Easy To Follow Walkthrough of TryHackMe's Pickle Rick CTF
     - name: 'twitter:image'
-      value: images/7.jpg
+      value: /images/o9pyhyU.jpg
       relativeUrl: true
 layout: post
 ---
@@ -54,11 +50,9 @@ First, let's start by pinging the machine and making sure we're able to connect.
 
 Everything looks good, so let's try to see which ports we have available.  I'll be using NMAP to perform this scan:
 
-sudo nmap -sN -Pn 10.10.19.153
-
-\-sN -- TCP Null scan
-
-\-Pn -- Treats all hosts as online / skip host discovery
+    sudo nmap -sN -Pn 10.10.19.153
+         -sN -- TCP Null scan
+         -Pn -- Treats all hosts as online / skip host discovery
 
 ![](/images/nmap.png)
 
