@@ -81,5 +81,19 @@ Before we jump to directory hunting, let's check for a robots.txt to get any mor
 
 Curl returns a seemingly nonsense phrase that will be important later, and I have purposely blurred.  For now, we do not know its significance though.
 
+Let's do some directory busting.  I'll be using DirBuster, and I'll be using a small wordlist that comes pre-installed in Parrot and Kali.  I'll input the target IP, as well as the file path to my list:
 
+![](/images/dirbuster.png)
+
+After letting the scan run for a few moments, we have some interesting results:
+
+![](/images/a_dirbuster_return.png)
+
+We can see both a /login.php and  a /portal.php which are interesting.  Let's navigate to the login page.
+
+![](/images/login.png)
+
+We know the Username from our notes of the HTML comment on the home page, but we don't know the password.  A quick trial of usual passwords doesn't work.  We can try a sniper attack in BurpSuite, but what about the text in /robots.txt?  Let's try that.
+
+![](/images/command.png)
 
