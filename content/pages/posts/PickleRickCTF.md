@@ -14,7 +14,7 @@ seo:
       value: article
       keyName: property
     - name: 'og:title'
-      value: Pickle Rick CTF
+      value: Pickle Rick CTF Walkthrough - Easy
       keyName: property
     - name: 'og:description'
       value: Easy To Follow Walkthrough of TryHackMe's Pickle Rick CTF
