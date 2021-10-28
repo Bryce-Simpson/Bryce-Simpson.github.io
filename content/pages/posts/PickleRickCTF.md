@@ -30,7 +30,7 @@ seo:
     - name: 'twitter:description'
       value: Easy Walktrhough of TryHackMe's Pickle Rick CTF
     - name: 'twitter:image'
-      value: images/7.jpg
+      value: /images/o9pyhyU.jpg
       relativeUrl: true
 layout: post
 ---
