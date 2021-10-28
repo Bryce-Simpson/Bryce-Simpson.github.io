@@ -107,3 +107,16 @@ Nothing seems to stand out aside from the comment which appears to be Base64 enc
 After some trial and error, we can see that we're seemingly giving commands to a Linux machine.  We can see a 'clue.txt' and 'Sup3rS3cretPickl3Ingred.txt' in our current directory, so let's try to cat the ingredient.
 
 ![](/images/cat.png)
+
+Ok.  That didn't work, but we have more options.  Let's wget the files and have them locally if we need them later.![](/images/wget.png)
+
+From here, we can cat the files and see what they contain:
+
+![](/images/a_first_ingred.png)
+
+Awesome, we have the first ingredient as well as a hint for how to find the rest.
+
+Alternatively, we would have been able to 'less' the .txt files and gotten their contents in the browser:
+
+![](/images/a_less_first.png)![](/images/less_clue.png)
+
