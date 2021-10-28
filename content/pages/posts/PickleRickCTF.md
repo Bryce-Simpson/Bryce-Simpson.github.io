@@ -26,7 +26,7 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Pickle Rick CTF
+      value: Pickle Rick CTF Walkthrough - Easy
     - name: 'twitter:description'
       value: Easy To Follow Walkthrough of TryHackMe's Pickle Rick CTF
     - name: 'twitter:image'
