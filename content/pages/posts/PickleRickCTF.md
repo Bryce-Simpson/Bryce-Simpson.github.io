@@ -37,6 +37,7 @@ seo:
       value: images/7.jpg
       relativeUrl: true
 layout: post
+subtitle: Pickle Rick
 ---
 TryHackMe - Pickle Rick CTF: [https://tryhackme.com/room/picklerick](https://tryhackme.com/room/picklerickTryHackMe)
 
