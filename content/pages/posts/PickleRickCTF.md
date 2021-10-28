@@ -20,7 +20,7 @@ seo:
       value: Easy Walktrhough of TryHackMe's Pickle Rick CTF
       keyName: property
     - name: 'og:image'
-      value: images/7.jpg
+      value: /images/o9pyhyU.jpg
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
