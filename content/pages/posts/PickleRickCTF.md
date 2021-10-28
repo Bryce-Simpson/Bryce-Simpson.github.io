@@ -140,7 +140,7 @@ Now we can explore the machine and look for our next ingredient:
 
 Awesome.  That's the second ingredient, and we only have one left.  Unfortunately, the last one needs root access, so let's practice our privilege escalation.  I'll use another python script to sudo bash:
 
-> python3 -c 'import pty; pty.spawn("/bin/bash")'
+`python3 -c 'import pty; pty.spawn("/bin/bash")'`
 
 Now we can cd to /root, and get into the third ingredient:
 
