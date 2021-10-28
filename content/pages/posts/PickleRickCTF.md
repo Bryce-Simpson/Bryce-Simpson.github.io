@@ -28,9 +28,7 @@ seo:
     - name: 'twitter:title'
       value: Fragments of Iceland
     - name: 'twitter:description'
-      value: >-
-        Iceland is a Nordic country between the North Atlantic and the Arctic
-        Ocean.
+      value: Easy Walktrhough of TryHackMe's Pickle Rick CTF
     - name: 'twitter:image'
       value: images/7.jpg
       relativeUrl: true
