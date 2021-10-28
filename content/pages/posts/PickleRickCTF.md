@@ -17,9 +17,7 @@ seo:
       value: Pickle Rick CTF
       keyName: property
     - name: 'og:description'
-      value: >-
-        Iceland is a Nordic country between the North Atlantic and the Arctic
-        Ocean.
+      value: Easy Walktrhough of TryHackMe's Pickle Rick CTF
       keyName: property
     - name: 'og:image'
       value: images/7.jpg
