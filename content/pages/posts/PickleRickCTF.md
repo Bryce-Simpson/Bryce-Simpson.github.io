@@ -4,7 +4,7 @@ excerpt: >-
   This "Easy" rated box on TryHackMe can be completed with only your web
   browser!
 date: '2021-10-27'
-thumb_img_path: images/7.jpg
+thumb_img_path: /images/o9pyhyU.jpg
 thumb_img_alt: Icelandic horses
 content_img_path: /images/Banner.png
 content_img_alt: Icelandic horses
