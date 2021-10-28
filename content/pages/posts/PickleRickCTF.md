@@ -52,7 +52,7 @@ Everything looks good, so let's try to see which ports we have available.  I'll 
 
 `sudo nmap -sN -Pn 10.10.19.153`
 
-`-sN -- TCP Null scan`
+    `-sN -- TCP Null scan`
 
 `-Pn -- Treats all hosts as online / skip host discovery`
 
