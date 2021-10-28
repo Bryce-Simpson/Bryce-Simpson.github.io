@@ -101,3 +101,9 @@ Awesome, that worked, and now we're in.  Let's check the page source for any hid
 ![](/images/a_portal_source.png)
 
 Nothing seems to stand out aside from the comment which appears to be Base64 encoded.  Let's make note of that and go back to /portal.php.  Let's try out a few commands we know, and see if that gets us anywhere.
+
+![](/images/whoami.png)![](/images/ls.png)
+
+After some trial and error, we can see that we're seemingly giving commands to a Linux machine.  We can see a 'clue.txt' and 'Sup3rS3cretPickl3Ingred.txt' in our current directory, so let's try to cat the ingredient.
+
+![](/images/cat.png)
