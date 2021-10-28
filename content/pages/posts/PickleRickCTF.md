@@ -51,7 +51,9 @@ First, let's start by pinging the machine and making sure we're able to connect.
 Everything looks good, so let's try to see which ports we have available.  I'll be using NMAP to perform this scan:
 
 `sudo nmap -sN -Pn 10.10.19.153`
+
 `-sN -- TCP Null scan`
+
 `-Pn -- Treats all hosts as online / skip host discovery`
 
 ![](/images/nmap.png)
