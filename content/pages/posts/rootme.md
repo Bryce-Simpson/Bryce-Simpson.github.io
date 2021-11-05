@@ -2,7 +2,7 @@
 title: TryHackMe - RootMe CTF
 date: '2021-11-05'
 thumb_img_alt: TryHackMe - RootMe
-content_img_alt: Icelandic horses
+content_img_alt: TryHackMe - RootMe
 excerpt: An "Easy" CTF for beginners
 seo:
   title: Pickle Rick Walkthrough - Easy
