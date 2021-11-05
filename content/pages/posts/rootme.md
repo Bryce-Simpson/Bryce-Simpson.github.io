@@ -139,4 +139,12 @@ Let's start by finding files with SUID permission:
 
 ![](/images/ant_SUID.png)
 
-Looking through the list, /usr/bin/python stands out as unusual.
+Looking through the list, /usr/bin/python stands out as unusual, so let's see what we can do with SUID permission in python.  We'll navigate to <https://gtfobins.github.io/> and search SUID and python.
+
+![](/images/SUID_search.png)
+
+We can run the second line (less the ./ ) in our shell to escalate our privileges.  Once we are root, it's a simple task of finding root.txt, and cat the file to read its contents.
+
+![](/images/ant_root.png)
+
+And that's it for this box! Make sure you submit your flags, and I'll see you in the next room.
