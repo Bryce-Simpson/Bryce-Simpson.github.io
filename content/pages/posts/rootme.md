@@ -35,7 +35,7 @@ layout: post
 thumb_img_path: /images/icon.png
 content_img_path: /images/banner-da9a986d.PNG
 ---
-TryHackMe - Pickle Rick CTF: [https://tryhackme.com/room/picklerick](https://tryhackme.com/room/picklerickTryHackMe)
+TryHackMe - RootMe CTF: [https://tryhackme.com/room/](https://tryhackme.com/room/picklerickTryHackMe)rootme
 
 This box is listed as Easy .  All three ingredients can be discovered easily from your browser and without using any tools, but for this walkthrough I will be using:
 
