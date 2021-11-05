@@ -101,7 +101,19 @@ It looks like we have way to upload files to the server, and in conjunction with
 
 # Task 3: Getting a shell
 
-Alright, we need a file we can upload which will allow us to get a reverse shell.  
+Alright, we need a file we can upload which will allow us to get a reverse shell.
+
+[My go-to for a php-reverse-shell is: https://github.com/pentestmonkey/php-reverse-shell](https://github.com/pentestmonkey/php-reverse-shell) let's grab the script there and make a few changes.
+
+![](/images/ant_shell.py.png)
+
+We need to set $ip to a string containing our machine IP, and $port to an integer for the port to use.  I'll be using port 4444.
+
+Let's save this as exploit.php, and upload it to the server.
+
+![](/images/rejected.png)
+
+I don't speak Portuguese, but it appears that .PHP files are not permitted.
 
 
 
