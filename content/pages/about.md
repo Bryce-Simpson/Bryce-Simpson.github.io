@@ -31,8 +31,8 @@ seo:
       relativeUrl: true
 layout: page
 ---
-**Bryce Simpson **is a student studying Computer Science and Cybersecurity.  Bryce received a Bachelor of Arts degree in Criminology and Law from the University of California, Irvine in 2011. 
+\*\*Bryce Simpson \*\*is a student studying Computer Science and Cybersecurity.  Bryce received a Bachelor of Arts degree in Criminology and Law from the University of California, Irvine in 2011.
 
-As a hobby, Bryce enjoys photography and has had photographs featured in gallerias around the world including in Greece, Israel, England, Australia, and Portugal.  He lives in Southern California with his beautiful wife and two boys.
+As a hobby, Bryce enjoys photography.  He has had his portraiture and wild-life photographs and has had photographs featured in gallerias around the world including in Greece, Israel, England, Australia, and Portugal.  He lives in Southern California with his beautiful wife and two boys.
 
 *Thank You for reading!*
