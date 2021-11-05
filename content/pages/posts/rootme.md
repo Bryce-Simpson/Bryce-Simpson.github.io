@@ -36,15 +36,63 @@ content_img_path: /images/banner-da9a986d.PNG
 ---
 TryHackMe - RootMe CTF: [https://tryhackme.com/room/rootme](http://tryhackme.com/room/rootme)
 
-This box is listed as Easy .  All three ingredients can be discovered easily from your browser and without using any tools, but for this walkthrough I will be using:
+This box is listed as Easy and will be a good way to practice some of our skills like enumeration, reverse-shells, and privilege escalation.  For this walkthrough, I will be using:
 
-`NMAP DIRBUSTER NETCAT`
-
-I will try to provide alternative guidance where applicable.
+`NMAP GOBUSTER NETCAT`
 
 # ENUMERATION
 
-First, let's start by pinging the machine and making sure we're able to connect.
+Let's let NMAP run and see what preliminary information we can get first.
+
+![](/images/nmap-7bb47228.png)
+
+\`sudo nmap -sC -sV -oN nmap_initial 10.10.120.35
+
+     **-sC**: Runs NMAP default scripts
+
+     **-sV**: Checks for versions running
+
+     **-oN**: Outputs the return to a file named 'nmap_initial'
+
+     **\[target ip]**\`
+
+We can see there are only two services running on this machine: ssh on port 22, and an http server on port 80.
+
+
+
+##### Scan the machine, how many ports are open? 
+
+######           2: Port 22 and Port 80
+
+##### What version of Apache is running? 
+
+          2.4.29
+
+##### What service is running on port 22? 
+
+          ssh
+
+##### Find directories on the web server using the GoBuster tool.
+
+We can do a directory search with GoBuster using
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ![](/images/ping.png)
 
