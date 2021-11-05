@@ -3,7 +3,6 @@ title: TryHackMe - Pickle Rick CTF
 excerpt: Follow along with this "Easy" rated box on TryHackMe to save Pickle Rick.
 date: '2021-10-27'
 thumb_img_path: /images/o9pyhyU.jpg
-thumb_img_alt: Icelandic horses
 content_img_path: /images/banner.PNG
 content_img_alt: Icelandic horses
 seo:
