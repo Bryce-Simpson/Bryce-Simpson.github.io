@@ -48,49 +48,34 @@ Let's let NMAP run and see what preliminary information we can get first.
 
 \`sudo nmap -sC -sV -oN nmap_initial 10.10.120.35
 
-     **-sC**: Runs NMAP default scripts
+```
+ **-sC**: Runs NMAP default scripts
 
-     **-sV**: Checks for versions running
+ **-sV**: Checks for versions running
 
-     **-oN**: Outputs the return to a file named 'nmap_initial'
+ **-oN**: Outputs the return to a file named 'nmap_initial'
 
-     **\[target ip]**\`
+ **\[target ip]**\`
+
+```
 
 We can see there are only two services running on this machine: ssh on port 22, and an http server on port 80.
 
+##### Scan the machine, how many ports are open?
 
+###### 2: Port 22 and Port 80
 
-##### Scan the machine, how many ports are open? 
-
-######           2: Port 22 and Port 80
-
-##### What version of Apache is running? 
+##### What version of Apache is running?
 
           2.4.29
 
-##### What service is running on port 22? 
+##### What service is running on port 22?
 
           ssh
 
 ##### Find directories on the web server using the GoBuster tool.
 
-We can do a directory search with GoBuster using
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+We can use the command 'dir' and have GoBuster use directory/file enumeration mode:
 
 
 
