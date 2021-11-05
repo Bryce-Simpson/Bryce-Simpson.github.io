@@ -124,3 +124,19 @@ Awesome.  We have our file uploaded, and we can confirm this by going to 10.10.1
 Now, before we open our file on the server, let's start up netcat and listen on port 4444.  Once netcat is listening, we can access our .phtml file on the server and see that we have a reverse shell:
 
 ![](/images/reverse_shell-2482ff64.png)
+
+Now that we're in, let's look for the file we need.  We know it's called "user.txt", so we can:
+
+##### find . -iname "user.txt" -print 2>/dev/null
+
+This command will find files named "user.txt" in the tree.  All error returns are sent to /dev/null to be deleted, so our console is clean.  Once we find where the file is located, we can cat the file, and read the contents:
+
+![](/images/ant_user_flag.png)
+
+# Task 4: Privilege Escalation
+
+Let's start by finding files with SUID permission:
+
+![](/images/ant_SUID.png)
+
+Looking through the list, /usr/bin/python stands out as unusual.
