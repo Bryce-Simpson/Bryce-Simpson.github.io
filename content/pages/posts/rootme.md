@@ -40,7 +40,11 @@ This box is listed as Easy and will be a good way to practice some of our skills
 
 `NMAP GOBUSTER NETCAT`
 
-# ENUMERATION
+# Task 1: Deploy the Machine
+
+Easy enough.  Get the machine started, and let's move to task 2.
+
+# Task 2: Reconnaissance
 
 Let's let NMAP run and see what preliminary information we can get first.
 
@@ -81,61 +85,27 @@ We can use the command 'dir' and have GoBuster use directory/file enumeration mo
 
 #### gobuster dir -u http://10.10.120.35/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -q -z
 
-     \*\*-u\*\*: tag for url entry
-
-     \*\*-w\*\*: tag for link to wordlist
-
-     \*\*-q\*\*: tag for 'quiet'; doesn't print header and other noise
-
-     \*\*-z\*\*: tag to remove progress and error returns
+```
+ 
+```
 
 After looking at the return, we can see directories for uploads and panel .  Let's go to the webserver and see what we can find.
 
+![](/images/http.png)
 
+There doesn't seem to be anything on the landing page, so let's take a look at panel.
 
+![](/images/panel.png)
 
+It looks like we have way to upload files to the server, and in conjunction with uploads I think we'll be able to access files we upload.
 
+# Task 3: Getting a shell
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Alright, we need a file we can upload which will allow us to get a reverse shell.  
 
 
 
 ![](/images/ping.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Everything looks good, so let's try to see which ports we have available.  I'll be using NMAP to perform this scan:
 
