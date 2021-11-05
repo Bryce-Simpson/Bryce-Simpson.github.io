@@ -1,6 +1,6 @@
 ---
 title: TryHackMe - RootMe CTF
-date: '2021-10-27'
+date: '2021-11-05'
 thumb_img_alt: Icelandic horses
 content_img_alt: Icelandic horses
 excerpt: An "Easy" CTF for beginners
