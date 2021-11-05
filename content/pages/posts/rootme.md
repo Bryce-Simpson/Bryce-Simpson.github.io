@@ -1,5 +1,5 @@
 ---
-title: TryHackMe - Pickle Rick CTF
+title: TryHackMe - RootMe CTF
 subtitle: lorem-ipsum
 date: '2021-10-27'
 thumb_img_alt: Icelandic horses
