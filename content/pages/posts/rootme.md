@@ -4,7 +4,7 @@ subtitle: lorem-ipsum
 date: '2021-10-27'
 thumb_img_alt: Icelandic horses
 content_img_alt: Icelandic horses
-excerpt: '"A ctf for beginners, can you root me?"'
+excerpt: An "Easy" CTF for beginners
 seo:
   title: Pickle Rick Walkthrough - Easy
   description: Easy To Follow Walkthrough of TryHackMe's Pickle Rick CTF
