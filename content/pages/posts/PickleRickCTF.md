@@ -34,13 +34,13 @@ seo:
       relativeUrl: true
 layout: post
 ---
-TryHackMe - Pickle Rick CTF: [https://tryhackme.com/room/picklerick](https://tryhackme.com/room/picklerickTryHackMe)
+TryHackMe - RootMe CTF: [https://tryhackme.com/room/rootme](https://tryhackme.com/room/picklerickTryHackMe)
 
-This box is listed as Easy .  All three ingredients can be discovered easily from your browser and without using any tools, but for this walkthrough I will be using:
+This box is listed as Easy .  This will be a good way to practice our basic skills like enumeration, reverse-shell, and privilege escalation.
 
-`NMAP DIRBUSTER NETCAT`
+For this walkthrough, I will be using:
 
-I will try to provide alternative guidance where applicable.
+\`NMAP NETCAT GOBUSTER\`
 
 # ENUMERATION
 
