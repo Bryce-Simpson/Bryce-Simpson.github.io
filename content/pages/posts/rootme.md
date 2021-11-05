@@ -33,7 +33,7 @@ seo:
       relativeUrl: true
 layout: post
 thumb_img_path: /images/o9pyhyU.jpg
-content_img_path: /images/Banner.png
+content_img_path: /images/banner-da9a986d.PNG
 ---
 TryHackMe - Pickle Rick CTF: [https://tryhackme.com/room/picklerick](https://tryhackme.com/room/picklerickTryHackMe)
 
