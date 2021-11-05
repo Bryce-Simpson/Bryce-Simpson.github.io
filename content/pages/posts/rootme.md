@@ -121,5 +121,6 @@ Awesome.  We have our file uploaded, and we can confirm this by going to 10.10.1
 
 ![](/images/upload.png)
 
-Now, before we open our file on the server, let's start up netcat and listen on port 4444.  Once netcat is listening, we can access our .phtml file on the server and see that we have a reverse shell
+Now, before we open our file on the server, let's start up netcat and listen on port 4444.  Once netcat is listening, we can access our .phtml file on the server and see that we have a reverse shell:
 
+![](/images/reverse_shell-2482ff64.png)
