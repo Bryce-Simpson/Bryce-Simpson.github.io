@@ -77,6 +77,34 @@ We can see there are only two services running on this machine: ssh on port 22, 
 
 We can use the command 'dir' and have GoBuster use directory/file enumeration mode:
 
+![](/images/ant_gobuster.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ![](/images/ping.png)
