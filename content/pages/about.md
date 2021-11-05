@@ -1,7 +1,7 @@
 ---
 title: About Me
 subtitle: This is a short page about me and my work.
-img_path: images/about.jpg
+img_path: /images/IMG_1448.jpg
 img_alt: Portrait of a man with beard and mustache
 seo:
   title: About Me
@@ -31,13 +31,8 @@ seo:
       relativeUrl: true
 layout: page
 ---
+\*\*Bryce Simpson \*\*is a student studying Computer Science and Cybersecurity.  Bryce received a Bachelor of Arts degree in Criminology and Law from the University of California, Irvine in 2011.
 
-**John Doe** is a Senior Art Director from [Stockholm](https://en.wikipedia.org/wiki/Stockholm), Sweden. After graduating from The College of Visual Arts with a degree in Communication Design, he worked for three small graphic design shops where he honed his design style and sensibility.
-
-His work has been recognized by Communication Arts, Print, How, ID, IdN, AIGA, Effie, Archive, Graphis, AdFed and Rockport. Graphic Design USA named him a person to watch in 2019.
-
->The world always seems brighter when you’ve just made something that wasn’t there before. <cite>Neil Gaiman</cite>
-
-As a hobby, John Doe authors the most influential design blog in Sweden with over 100,000 page views a month. He lives in Stockholm with his beautiful wife and two boys.
+As a hobby, Bryce enjoys photography.  He has had his portraiture and wild-life photographs and has had photographs featured in gallerias around the world including in Greece, Israel, England, Australia, and Portugal.  He lives in Southern California with his beautiful wife and two boys.
 
 *Thank You for reading!*
