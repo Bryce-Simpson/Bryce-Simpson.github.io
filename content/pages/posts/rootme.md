@@ -46,7 +46,7 @@ Let's let NMAP run and see what preliminary information we can get first.
 
 ![](/images/nmap-7bb47228.png)
 
-\`sudo nmap -sC -sV -oN nmap_initial 10.10.120.35
+#### sudo nmap -sC -sV -oN nmap_initial 10.10.120.35
 
 ```
  **-sC**: Runs NMAP default scripts
@@ -55,7 +55,7 @@ Let's let NMAP run and see what preliminary information we can get first.
 
  **-oN**: Outputs the return to a file named 'nmap_initial'
 
- **\[target ip]**\`
+ **\[target ip]**\
 
 ```
 
@@ -75,11 +75,21 @@ We can see there are only two services running on this machine: ssh on port 22, 
 
 ##### Find directories on the web server using the GoBuster tool.
 
-We can use the command 'dir' and have GoBuster use directory/file enumeration mode:
+We can use the command 'dir' and have GoBuster use directory/file enumeration mode.:
 
 ![](/images/ant_gobuster.png)
 
+#### gobuster dir -u http://10.10.120.35/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -q -z
 
+     \*\*-u\*\*: tag for url entry
+
+     \*\*-w\*\*: tag for link to wordlist
+
+     \*\*-q\*\*: tag for 'quiet'; doesn't print header and other noise
+
+     \*\*-z\*\*: tag to remove progress and error returns
+
+After looking at the return, we can see directories for uploads and panel .  Let's go to the webserver and see what we can find.
 
 
 
@@ -108,6 +118,24 @@ We can use the command 'dir' and have GoBuster use directory/file enumeration mo
 
 
 ![](/images/ping.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Everything looks good, so let's try to see which ports we have available.  I'll be using NMAP to perform this scan:
 
