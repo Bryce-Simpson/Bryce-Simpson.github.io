@@ -1,7 +1,7 @@
 ---
 title: About Me
 subtitle: This is a short page about me and my work.
-img_path: /images/IMG_1448.jpg
+img_path: /images/_MG_8290.jpg
 img_alt: Portrait of a man with beard and mustache
 seo:
   title: About Me
@@ -31,7 +31,7 @@ seo:
       relativeUrl: true
 layout: page
 ---
-\*\*Bryce Simpson \*\*is a student studying Computer Science and Cybersecurity.  Bryce received a Bachelor of Arts degree in Criminology and Law from the University of California, Irvine in 2011.
+**Bryce Simpson** is a student studying Computer Science and Cybersecurity.  Bryce received a Bachelor of Arts degree in Criminology and Law from the University of California, Irvine in 2011.
 
 As a hobby, Bryce enjoys photography.  He has had his portraiture and wild-life photographs and has had photographs featured in gallerias around the world including in Greece, Israel, England, Australia, and Portugal.  He lives in Southern California with his beautiful wife and two boys.
 
