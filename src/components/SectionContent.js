@@ -29,6 +29,7 @@ export default class SectionContent extends React.Component {
                     </div>
                 )}
             </section>
+            <script src="https://tryhackme.com/badge/710918"></script>
         );
     }
 }
