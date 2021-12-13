@@ -30,7 +30,7 @@ sections:
         style: button
 seo:
   title: CTF Walk-Throughs
-  description: The preview of the Fresh theme
+  description: TryHackMe and HackTheBox walk-throughs
   extra:
     - name: 'og:type'
       value: website
