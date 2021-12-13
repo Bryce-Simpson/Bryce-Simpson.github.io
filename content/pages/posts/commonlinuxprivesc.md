@@ -59,3 +59,17 @@ Second - Provided you have the required permissions, copy the raw code and creat
 
 LinEnum can be run as \`./LinEnum.sh\`
 
+![](/images/LinEnum-bf8e2df3.PNG)
+
+LinEnum provides a lot of information.  Take the time to read the provided documentation and understand what gets returned.
+
+The credentials are provided to ssh into the machine (user3:password).\`ssh user3@\[TARGET_IP]\`
+
+#### What is the Target's hostname?
+
+Logging in to the machine gives us the target's hostname: \`polobox\`
+
+#### Look at the output of /etc/passed how man "user\[x]" are there on the system?
+
+We can cat the file and count the user\[x] users.
+
