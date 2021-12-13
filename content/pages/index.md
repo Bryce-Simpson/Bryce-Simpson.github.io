@@ -29,8 +29,8 @@ sections:
         url: blog/index.html
         style: button
 seo:
-  title: Stackbit Fresh Theme
-  description: The preview of the Fresh theme
+  title: CTF Walk-Throughs
+  description: TryHackMe and HackTheBox walk-throughs
   extra:
     - name: 'og:type'
       value: website
