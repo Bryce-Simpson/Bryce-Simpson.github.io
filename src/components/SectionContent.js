@@ -28,7 +28,6 @@ export default class SectionContent extends React.Component {
                         <CtaButtons actions={actions} />
                     </div>
                 )}
-                <script src="https://tryhackme.com/badge/710918"></script>
             </section>
         );
     }
