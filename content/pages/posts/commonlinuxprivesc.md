@@ -122,6 +122,16 @@ Inside vi, :!sh will spawn a shell. :q! will quit.
 
 Crontabs can be viewed by \`cat /etc/crontab\`
 
+Create a msfvenom reverse netcat payload
 
+![](/images/msfvenom.PNG)
+
+![](/images/crontab-5b7a454c.PNG)
+
+Replace the code in autoscript.sh with our msfvenom payload
+
+![](/images/autoscript.PNG)
+
+![](/images/reverse_nc.PNG)
 
 # | Exploiting PATH Variable |
