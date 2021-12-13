@@ -21,7 +21,7 @@ sections:
         url: /contact
         style: button
       - label: lorem-ipsum
-        url: '#'
+        url: '<script src="https://tryhackme.com/badge/710918"></script>'
         style: link
         icon_class: dev
         new_window: false
