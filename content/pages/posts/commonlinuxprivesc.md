@@ -42,7 +42,7 @@ This box is listed as Easy .  It provides walk-throughs and practice of common l
 
 Let's start by discussing what "privesc" is.  Essentially, privesc (privilege escalation) is leveraging access to a low pricilege account to move to a higer privilege account (eg user to root).  Privesc can occur in two directions: horizontal and vertical.  In horizontal privesc, access is gained to an account of the same privilege level. This can be beneficial to access private files or if the new user has SUIDs we can exploit.  In vertical privesc, access is gained to an account with more access to the system (admin / root).  Read through the provided information in each of the three tasks and complete each section.
 
-# | ENUMERATION |
+# | Enumeration |
 
 ## LinEnum
 
@@ -62,7 +62,7 @@ LinEnum can be run as \`./LinEnum.sh\`
 
 LinEnum provides a lot of information.  Take the time to read the provided documentation and understand what gets returned.
 
-# | ABUSING SUID/GUID FILES |
+# | Abusing SUID/GUID Files |
 
 a SUID is a file (as everything in Linux is) which can be run as the owner regardless of the accessing user (in this case run as root).  These can be leveraged to get a shell and root access.  SUID permissions look like:
 
@@ -89,3 +89,23 @@ These SUID/GUIDs are reported by LinEnum, but can be searched for manually using
 2>/dev/null - sends errors to null where they're deleted\`
 
 ![](/images/SUID.PNG)
+
+# | Exploiting Writeable /etc/passwd |
+
+#### Understanding /etc/passwd format
+
+USERNAME:PASSWORD\*:USER_ID:GROUP_ID:USER_ID_INFO:HOME_DIRECTORY:COMMAND/SHELL
+
+an x character in the password spot indicates the encrypted password is stored in /etc/shadow
+
+Before adding a new user, a compliant password hash must be created (salt:new using new:123)
+
+![](/images/salted%20hash.PNG)
+
+Next, we can nano the passwd file and add our new user
+
+![](/images/created_new-fc2f2b5d.PNG)
+
+switch user (su) and proof of function
+
+![](/images/new_root.PNG)
