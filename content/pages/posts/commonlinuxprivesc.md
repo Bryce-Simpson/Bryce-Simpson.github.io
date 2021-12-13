@@ -114,7 +114,7 @@ switch user (su) and proof of function
 
 Once access is gained to a machine sudo -l should be ran to list what commands we can use as super user
 
-Inside vi, :!sh will spawn a shell. :q! will quit.
+Inside vi, :!sh will spawn a shell. :q! will quit :!bash will spawn a bash shell.
 
 ![](/images/vi-ab2c1ba6.PNG)
 
@@ -131,8 +131,6 @@ Create a msfvenom reverse netcat payload
 Replace the code in autoscript.sh with our msfvenom payload
 
 ![](/images/autoscript.PNG)
-
-
 
 ![](/images/reverse_nc-c7bacec2.PNG)
 
