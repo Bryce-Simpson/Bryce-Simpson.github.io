@@ -37,13 +37,13 @@ content_img_path: /images/banner.png
 ---
 TryHackMe - Common Linux Privesc (Privilege Escalation): <https://tryhackme.com/room/commonlinuxprivesc>
 
-This box is listed as Easy .  It provides walk-throughs and practice of common linux privilege escalation vectors.
+This box is listed as Easy .  It provides walk-throughs and practice of common linux privilege escalation vectors.  This will not be a walk-through of the machine, but instead a reiteration of the common privesc vectors taught and practiced in the room.
 
-# TASKS 1 - 3 | What is Privesc?
+# | What is Privesc?|
 
 Let's start by discussing what "privesc" is.  Essentially, privesc (privilege escalation) is leveraging access to a low pricilege account to move to a higer privilege account (eg user to root).  Privesc can occur in two directions: horizontal and vertical.  In horizontal privesc, access is gained to an account of the same privilege level. This can be beneficial to access private files or if the new user has SUIDs we can exploit.  In vertical privesc, access is gained to an account with more access to the system (admin / root).  Read through the provided information in each of the three tasks and complete each section.
 
-# TASK 4 | ENUMERATION
+# | ENUMERATION |
 
 ## LinEnum
 
@@ -63,13 +63,30 @@ LinEnum can be run as \`./LinEnum.sh\`
 
 LinEnum provides a lot of information.  Take the time to read the provided documentation and understand what gets returned.
 
-The credentials are provided to ssh into the machine (user3:password).\`ssh user3@\[TARGET_IP]\`
+# | ABUSING SUID/GUID FILES |
 
-#### What is the Target's hostname?
+a SUID is a file (as everything in Linux is) which can be run as the owner regardless of the accessing user (in this case run as root).  These can be leveraged to get a shell and root access.  SUID permissions look like:
 
-Logging in to the machine gives us the target's hostname: \`polobox\`
+\`rws-rwx-rwx\`
 
-#### Look at the output of /etc/passed how man "user\[x]" are there on the system?
+whereas GUID permissions look like:
 
-We can cat the file and count the user\[x] users.
+\`rwx-rws-rwx\`
 
+These SUID/GUIDs are reported by LinEnum, but can be searched for manually using:
+
+\`find / -perm -u=s -type f 2>/dev/null\`
+
+\`find - search command
+
+/ - search entire file system
+
+\-perm - find specific permissions
+
+\-u=s - any of the permission bits mode are set for the file
+
+\-type f - only searches for files
+
+2>/dev/null - sends errors to null where they're deleted\`
+
+![](/images/SUID.PNG)
