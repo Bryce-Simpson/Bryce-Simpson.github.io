@@ -29,7 +29,7 @@ sections:
         url: blog/index.html
         style: button
 seo:
-  title: Stackbit Fresh Theme
+  title: CTF Walk-Throughs
   description: The preview of the Fresh theme
   extra:
     - name: 'og:type'
