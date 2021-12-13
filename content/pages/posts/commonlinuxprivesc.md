@@ -114,3 +114,5 @@ switch user (su) and proof of function
 
 Once access is gained to a machine sudo -l should be ran to list what commands we can use as super user
 
+Inside vi, :!sh will spawn a shell. :q! will quit.
+
