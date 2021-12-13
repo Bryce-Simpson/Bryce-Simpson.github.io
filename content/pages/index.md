@@ -20,12 +20,6 @@ sections:
       - label: Contact Me
         url: /contact
         style: button
-      - label: lorem-ipsum
-        url: '<script src="https://tryhackme.com/badge/710918"></script>'
-        style: link
-        icon_class: dev
-        new_window: false
-        no_follow: false
   - section_id: recent-posts
     type: section_posts
     title: Recent Posts
