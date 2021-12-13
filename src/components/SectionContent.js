@@ -22,7 +22,7 @@ export default class SectionContent extends React.Component {
                         <img src={withPrefix(image)} alt={imageAlt} />
                     </div>
                 )}
-                                {content && <div className="block-content inner-sm">{markdownify(content)}</div>}
+                {content && <div className="block-content inner-sm">{markdownify(content)}</div>}
                 {!_.isEmpty(actions) && (
                     <div className="block-buttons inner-sm">
                         <CtaButtons actions={actions} />
