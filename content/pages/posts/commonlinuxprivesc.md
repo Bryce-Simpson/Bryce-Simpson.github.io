@@ -1,5 +1,5 @@
 ---
-title: TryHackMe - Pickle Rick CTF
+title: TryHackMe - Common Linux Privesc
 subtitle: lorem-ipsum
 date: '2021-10-27'
 thumb_img_alt: lorem-ipsum
