@@ -27,7 +27,6 @@ export default class SectionContent extends React.Component {
                     <div className="block-buttons inner-sm">
                         <CtaButtons actions={actions} />
                     </div>
-                    
                 )}
             </section>
         );
