@@ -68,14 +68,6 @@
                 "style": "icon",
                 "icon_class": "dev",
                 "new_window": true
-            },
-            {
-                "label": "lorem-ipsum",
-                "url": "<script src=\"https://tryhackme.com/badge/710918\"></script>",
-                "style": "link",
-                "icon_class": "dev",
-                "new_window": false,
-                "no_follow": false
             }
         ]
     },
