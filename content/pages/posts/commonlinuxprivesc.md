@@ -120,4 +120,8 @@ Inside vi, :!sh will spawn a shell. :q! will quit.
 
 # | Exploiting Crontab |
 
+Crontabs can be viewed by \`cat /etc/crontab\`
+
+
+
 # | Exploiting PATH Variable |
