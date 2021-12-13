@@ -109,3 +109,7 @@ Next, we can nano the passwd file and add our new user
 switch user (su) and proof of function
 
 ![](/images/new_root.PNG)
+
+# | Escaping Vi Editor |
+
+Once access is gained to a machine sudo -l should be ran to list what commands we can use as super user
