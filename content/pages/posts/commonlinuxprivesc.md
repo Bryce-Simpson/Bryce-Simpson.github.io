@@ -132,6 +132,8 @@ Replace the code in autoscript.sh with our msfvenom payload
 
 ![](/images/autoscript.PNG)
 
-![](/images/reverse_nc.PNG)
+
+
+![](/images/reverse_nc-c7bacec2.PNG)
 
 # | Exploiting PATH Variable |
