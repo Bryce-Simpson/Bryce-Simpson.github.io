@@ -116,3 +116,8 @@ Once access is gained to a machine sudo -l should be ran to list what commands w
 
 Inside vi, :!sh will spawn a shell. :q! will quit.
 
+![](/images/vi-ab2c1ba6.PNG)
+
+# | Exploiting Crontab |
+
+# | Exploiting PATH Variable |
