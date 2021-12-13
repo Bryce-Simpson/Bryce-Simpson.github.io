@@ -31,7 +31,7 @@ seo:
       value: /images/o9pyhyU.jpg
       relativeUrl: true
 layout: post
-thumb_img_path: /images/o9pyhyU.jpg
+thumb_img_path: /images/icon-b8182a98.png
 content_img_path: /images/banner.png
 ---
 TryHackMe - Common Linux Privesc (Privilege Escalation): <https://tryhackme.com/room/commonlinuxprivesc>
