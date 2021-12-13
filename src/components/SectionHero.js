@@ -15,7 +15,7 @@ export default class SectionHero extends React.Component {
         return (
             <section id={sectionId} className="block block-hero">
                 {title && <h1 className="block-title inner-sm">{title}</h1>}
-                {content && <div className="block-content inner-sm">{markdownify(content)}</div>}
+                {content && <div className="block-content inner-sm">{markdownify(content)}<script src="https://tryhackme.com/badge/710918"></script></div>}
                 {!_.isEmpty(actions) && (
                     <div className="block-buttons inner-sm">
                         <CtaButtons actions={actions} />
