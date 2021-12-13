@@ -1,7 +1,7 @@
 ---
 title: TryHackMe - Common Linux Privesc
 subtitle: lorem-ipsum
-date: '2021-10-27'
+date: '2021-12-12'
 thumb_img_alt: lorem-ipsum
 content_img_alt: Icelandic horses
 excerpt: Follow along with this "Easy" rated box on TryHackMe to save Pickle Rick.
